@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo-02.684f252c.png" />
+    <link rel="icon" href="/img/favicon.png" type="image/png" />
+    <title>Tarek Hammami ‣ Portfolio</title>
+
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Alfa Slab One font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Animation library styles -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Iconify Icons -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script type="module" crossorigin src="/assets/index.b601987a.js"></script>
+    <link rel="modulepreload" href="/assets/vendor.79c4b026.js">
+    <link rel="stylesheet" href="/assets/index.898af910.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- GSAP animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+    <!-- AOS Animations -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const backToTopBtn = $("#backToTopBtn");
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+          backToTopBtn.addClass("show");
+        } else {
+          backToTopBtn.removeClass("show");
+        }
+      });
+
+      backToTopBtn.on("click", function (e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "300");
+      });
+
+      AOS.init();
+    </script>
+  </body>
+</html>
